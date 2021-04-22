@@ -46,7 +46,7 @@ bool Init()
 		}
 
 		//Create window
-		window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, g::W_W, g::W_H, SDL_WINDOW_SHOWN );
+		window = SDL_CreateWindow( "Keep Up!", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, g::W_W, g::W_H, SDL_WINDOW_SHOWN );
 		if( window == NULL )
 		{
 			printf( "Window could not be created! SDL Error: %s\n", SDL_GetError() );
