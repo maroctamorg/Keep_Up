@@ -72,12 +72,12 @@ int Text::generateTxtTexture(SDL_Renderer *renderer)
 
 void Text::displayText(SDL_Renderer *renderer)
 {
-    if (txtTexture)
+    if (txtTexture != NULL && txtTexture != nullptr)
         {
             int texW = 0;
             int texH = 0;
             SDL_QueryTexture(txtTexture, NULL, NULL, &texW, &texH);
-            SDL_Rect dstrect = { target_rect.x, target_rect.y, texW, texH };
+            SDL_Rect dstrect = { target_rect.x + static_cast<int>(target_rect.w/10), target_rect.y + static_cast<int>(target_rect.h/8), texW, texH };
 
             if(display_rect) {
                 SDL_SetRenderDrawColor(renderer, rect_colour.r, rect_colour.g, rect_colour.b, rect_colour.a);

@@ -20,7 +20,7 @@ SDL_Point Character::getVel(){
 void Character::update_speed() {
     
     if(vel.y >= 0) {
-        vel.y -= 3;
+        vel.y -= 4; //3 / 5
     }
     
     //vel.y -= 3;
@@ -43,7 +43,7 @@ void Character::move(){
         pos.y += 1;
     }
 
-    if(counter == 50) {
+    if(counter == 40) { //50 / 25
         counter = 0;
         if(vel.y < 2){
             vel.y += 1;
@@ -125,7 +125,7 @@ void Obstacle::draw(SDL_Renderer *renderer) {
 
 
 Obstacle_Generator::Obstacle_Generator(int rate, int beginRange, int endRange, int initialVel)
-    : rate{ rate }, range{ beginRange, endRange }, obstacles(5), vel {initialVel} {
+    : rate{ rate }, range{ beginRange, endRange }, obstacles(5), vel {initialVel}, count{0} {
         srand(time(NULL));
     }
 
@@ -162,7 +162,7 @@ void Obstacle_Generator::updateObstacles(){
         if(obstacles.at(i).isInitialized()) {
             std::cout << "Moving object..." << '\n';
             obstacles.at(i).move();
-            obstacles.at(i).update_speed(-count/50000);
+            obstacles.at(i).update_speed(-count/50000); //50000
             if (obstacles.at(i).getPos().x + obstacles.at(i).getWidth() < 0 ) {
                 std::cout << "Deinitializing object..." << '\n';
                 obstacles.at(i).deInitialize();

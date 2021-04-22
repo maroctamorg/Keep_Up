@@ -7,7 +7,7 @@ namespace g{
     extern const char* saveFile {"resources/savefile.txt"};
     extern const std::string font {"resources/Krungthep.ttf"};
     extern const SDL_Colour scoreCounterTxtColour { 250, 250, 250, 250 };
-    extern const SDL_Rect scoreCounterRect {W_W - 75, W_H - 50, 75, 50};
+    extern const SDL_Rect scoreCounterRect {W_W - 100, W_H - 75, 50, 50};
     extern const SDL_Colour scoreCounterRectColour { 0, 0, 0, 250};
 }
 

@@ -63,6 +63,8 @@ bool Init()
 			}
 			else
 			{
+                SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+
 				//Initialize renderer color
 				SDL_SetRenderDrawColor( renderer, 0xFF, 0xFF, 0xFF, 0xFF );
 
@@ -143,14 +145,6 @@ SDL_Texture* loadTexture( std::string path )
 	return newTexture;
 }
 
-
-/*
-
-SDL_Window *window { nullptr };
-SDL_Renderer *renderer { nullptr };
-SDL_Texture *background_texture { nullptr };
-
-
 class Timer
 {
 private:
@@ -176,92 +170,19 @@ public:
 	}
 };
 
-
-bool Init()
-{
-    std::cout << "Call to Init().\n";
-    SDL_Init(SDL_INIT_EVERYTHING);
-    TTF_Init();
-
-    window = SDL_CreateWindow("TEST", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, g::W_W, g::W_H, 0);
-    renderer = SDL_CreateRenderer(window, -1, 0);
-    SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
-    
-    bool success = true;
-
-    if( window == nullptr )
-        {
-            printf( "Window could not be created! SDL Error: %s\n", SDL_GetError() );
-            success = false;
-        }
-        else
-        {
-            //Initialize PNG loading
-            int imgFlags = IMG_INIT_PNG;
-            if( !( IMG_Init( imgFlags ) & imgFlags ) )
-            {
-                printf( "SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError() );
-                success = false;
-            }
-        }
-
-    return (window && renderer && success);
-}
-
-void Quit(SDL_Renderer *renderer, SDL_Window *window, SDL_Texture *bakcground_texture)
-{
-    SDL_DestroyTexture(background_texture);
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    
-    
-    //renderer = nullptr
-    //window = nullptr;
-    //background_texture = nullptr;
-    
-
-    TTF_Quit();
-    IMG_Quit();
-    SDL_Quit();
-}
-
-SDL_Texture* loadTexture(std::string path)
-{
-    SDL_Texture* newTexture= nullptr;
-
-    //Load image at specified path
-    SDL_Surface* loadedSurface = IMG_Load( path.c_str() );
-    if( loadedSurface == NULL )
-    {
-        printf( "Unable to load image %s! SDL_image Error: %s\n", path.c_str(), IMG_GetError() );
-    }
-    else
-    {
-        //Create texture from surface pixels
-        newTexture = SDL_CreateTextureFromSurface( renderer, loadedSurface );
-        if( newTexture == NULL )
-        {
-            printf( "Unable to create texture from %s! SDL Error: %s\n", path.c_str(), SDL_GetError() );
-        }
-
-        //Get rid of old loaded surface
-        SDL_FreeSurface(loadedSurface);
-    }
-
-    return newTexture;
-}
-
-*/
-
-void checkBestScore(int score) {
+int checkBestScore(int score) {
     std::fstream savefile(g::saveFile);
+    int previous_score;
     int best_score;
-    savefile >> best_score;
-    if(score > best_score) {
-        savefile.clear();
+    savefile >> previous_score;
+    if(score > previous_score) {
+        savefile.seekg(0);
         savefile << score;
+        best_score = score;
     }
+    best_score = previous_score;
     savefile.close();
+    return best_score;
 }
 
 int main(int arc, char* argv[]) {
@@ -289,22 +210,24 @@ int main(int arc, char* argv[]) {
 
     //Initializing start menu
     SDL_Rect st_menuRect {100, 75, g::W_W - 200, g::W_H - 150};
-    SDL_Colour st_mn_clr {200, 200, 200, 150};
+    SDL_Colour st_mn_clr {255, 255, 255, 150};
     SDL_Colour st_mn_ft_clr {250, 250, 250, 150};
     SDL_Colour st_mn_btt_clr {0, 0, 0, 150};
     Menu st_menu {st_menuRect, background_texture, st_mn_clr, renderer};
 
+
     //Initializing start menu button objects
-    SDL_Rect st_mn_btt1_target_rect {200, st_menuRect.y + st_menuRect.h - 100, 150, 80};
-    SDL_Rect st_mn_btt1_rect {200, st_menuRect.y + st_menuRect.h - 100, 150, 80};
+    SDL_Rect st_mn_btt1_rect {200, st_menuRect.y + st_menuRect.h - 100, 150, 50};
+    SDL_Rect st_mn_btt1_target_rect {225, st_mn_btt1_rect.y + 10, 100, 30};
     st_menu.addBtt(NULL, "Start", g::font, 16, &st_mn_ft_clr, &st_mn_btt1_target_rect, &st_mn_btt1_rect, &st_mn_btt_clr, true, 0, renderer);
 
-    SDL_Rect st_mn_btt2_target_rect {400, st_menuRect.y + st_menuRect.h - 100, 150, 80};
-    SDL_Rect st_mn_btt2_rect {400, st_menuRect.y + st_menuRect.h - 100, 150, 80};
+    SDL_Rect st_mn_btt2_rect {400, st_menuRect.y + st_menuRect.h - 100, 150, 50};
+    SDL_Rect st_mn_btt2_target_rect {425, st_mn_btt2_rect.y + 10, 100, 30};
     st_menu.addBtt(NULL, "Quit", g::font, 16, &st_mn_ft_clr, &st_mn_btt2_target_rect, &st_mn_btt2_rect, &st_mn_btt_clr, true, 1, renderer);
 
+
     //Initializing start menu text objects
-    int best_score;
+    int best_score = checkBestScore(0);
     std::cout << "About to load best_score from savefile";
     try {
         std::fstream Savefile(g::saveFile);
@@ -313,68 +236,97 @@ int main(int arc, char* argv[]) {
     } catch(int e) {
         std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
     }
-    SDL_Rect st_mn_txt1_target_rect {210, 160, 80, 60};
-    st_menu.addTxt("Your best score: " + std::to_string(best_score), g::font, 16, &st_mn_ft_clr, &st_mn_txt1_target_rect, &st_mn_btt_clr, true, renderer);
+    SDL_Rect st_mn_txt1_target_rect {200, 150, 400, 60};
+    st_menu.addTxt("Your best score: " + std::to_string(best_score), g::font, 22, &st_mn_ft_clr, &st_mn_txt1_target_rect, &st_mn_btt_clr, true, renderer);
+
+    //Initializing pause menu static objects
+    SDL_Rect pmenuRect {100, 75, g::W_W - 200, g::W_H - 150};
+    SDL_Colour pmn_clr {255, 255, 255, 150};
+    SDL_Colour pmn_ft_clr {250, 250, 250, 150};
+    SDL_Colour pmn_btt_clr {0, 0, 0, 150};
+
+    //Initializing pause menu button objects
+    SDL_Rect pmn_btt1_rect {200, pmenuRect.y + pmenuRect.h - 100, 150, 50};
+    SDL_Rect pmn_btt1_target_rect {225, pmn_btt1_rect.y + 10, 150, 30};
+
+    SDL_Rect pmn_btt2_rect {400, pmenuRect.y + pmenuRect.h - 100, 150, 50};
+    SDL_Rect pmn_btt2_target_rect {425, pmn_btt2_rect.y + 10, 150, 30};
+
+
+    //Initializing end menu static objects
+    SDL_Rect end_menuRect {100, 75, g::W_W - 200, g::W_H - 150};
+    SDL_Colour end_mn_clr {255, 255, 255, 150};
+    SDL_Colour end_mn_ft_clr {250, 250, 250, 150};
+    SDL_Colour end_mn_btt_clr {0, 0, 0, 150};
+
+    //Initializing end menu button objects
+    SDL_Rect end_mn_btt1_rect {200, end_menuRect.y + end_menuRect.h - 100, 150, 50};
+    SDL_Rect end_mn_btt1_target_rect {225, end_mn_btt1_rect.y + 10, 150, 30};
+
+    SDL_Rect end_mn_btt2_rect {400, end_menuRect.y + end_menuRect.h - 100, 150, 50};
+    SDL_Rect end_mn_btt2_target_rect {425, end_mn_btt2_rect.y + 10, 150, 30};
 
     //Initializing outer loop variables
     GAME_STATE menu_state { NOINPUT };
-    SDL_Rect st_srcRect {0, 0, g::W_W, g::W_H};
-    SDL_Rect st_destRect {0, 0, g::W_W, g::W_H};
+    SDL_Rect srcRect {0, 0, g::W_W, g::W_H};
+    SDL_Rect destRect {0, 0, g::W_W, g::W_H};
     bool done { false };
 
-    while(!done){
+    //Initializing menu loop variables
+    bool menu_done {false};
+    int id {-1};
+    //Start menu
+    while(!menu_done && !done) {
+        st_menu.display(renderer, &srcRect, &destRect);
+        SDL_RenderPresent(renderer);
+        menu_state = st_menu.get_uinput();
 
-        //Initializing menu loop variables
-        bool menu_done {false};
-        int id {-1};
-        while(!menu_done && !done) {
-            st_menu.display(renderer, &st_srcRect, &st_destRect);
-            SDL_RenderPresent(renderer);
-            menu_state = st_menu.get_uinput();
+        //std::cout << "Menu state: " << menu_state << '\n';
 
-            //std::cout << "Menu state: " << menu_state << '\n';
-
-            if (menu_state == UPDATE)
-            {
-                id = st_menu.update();
-                //std::cout << "menu_done : " << menu_done << '\n';
-                //check all button presses: call functions
-                switch(id) {
-                    case 0:
-                        menu_done = true;
-                        break;
-                    case 1:
-                        done = true;
-                        break;
-                }
-            }
-            
-            if (menu_state == TERMINATE)
-            {
-                done = true;
-            }
-        
-            if (event.type == SDL_QUIT){
-                done = true;
+        if (menu_state == UPDATE)
+        {
+            id = st_menu.update();
+            //std::cout << "menu_done : " << menu_done << '\n';
+            //check all button presses: call functions
+            switch(id) {
+                case 0:
+                    menu_done = true;
+                    break;
+                case 1:
+                    done = true;
+                    break;
             }
         }
+        
+        if (menu_state == TERMINATE)
+        {
+            done = true;
+        }
+    
+        if (event.type == SDL_QUIT){
+            done = true;
+        }
+    }
+
+    while(!done) {
     
     
         //Initializing game objects
         SDL_Point point {static_cast<int> (g::W_W/3), g::W_H/2};
         Character character { point };
         //Obstacle_Generator generator { 5, 1, 50, 250 };
-        Obstacle_Generator generator { 1, 100, 250, -1};
+        Obstacle_Generator generator { 2, 100, 250, -1}; //1, 100, 250, -1
 
         int x_run {0};
         int score {0};
-        Text scoreCounter {std::to_string(score), "Krungthep.ttf", 12, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
+        Text scoreCounter {std::to_string(score), g::font, 16, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
         bool game_done {false};
-        while(!done && !game_done){
+        bool pause {false};
+        while(!done && !game_done) {
             generator.generateObstacles();
             
             // displays running background
-            if(x_run % 100) {
+            if(x_run % 1000) {
                 score++;
                 scoreCounter.assignTxt(std::to_string(score), renderer);
             }
@@ -408,46 +360,153 @@ int main(int arc, char* argv[]) {
                     done = true;
                     break;
                 case SDL_KEYDOWN:
-                    if(event.key.keysym.sym == SDLK_SPACE) {
-                        character.update_speed();
+                    switch(event.key.keysym.sym) {
+                        case SDLK_SPACE:
+                            character.update_speed();
+                            break;
+                        case SDLK_RETURN:
+                        case SDLK_ESCAPE:
+                            pause = true;
+                            break;
                     }
                     break;
-                //case SDL_KEYUP:
-                    //if(event.key.keysym.sym == SDLK_SPACE){
-                    //    character.update_speed(0);
-                    //}
             }
-
-            x_run += 1;
             
-            //std::cout << "Game Loop Length:\t" << gLoop.elapsed() << '\n';
+            x_run++;
+
+            if(pause) {
+                //Initializing pause menu
+                Menu pmenu {pmenuRect, background_texture, pmn_clr, renderer};
+
+                //Adding dynamic objects
+                pmenu.addBtt(NULL, "Resume", g::font, 16, &pmn_ft_clr, &pmn_btt1_target_rect, &pmn_btt1_rect, &pmn_btt_clr, true, 0, renderer);
+                pmenu.addBtt(NULL, "Quit", g::font, 16, &pmn_ft_clr, &pmn_btt2_target_rect, &pmn_btt2_rect, &pmn_btt_clr, true, 1, renderer);
+
+                //Initializing pause menu dynamic objects
+                best_score = checkBestScore(score);
+                std::cout << "About to load best_score from savefile";
+                try {
+                    std::fstream Savefile(g::saveFile);
+                    Savefile >> best_score; 
+                    Savefile.close();
+                } catch(int e) {
+                    std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
+                }
+                SDL_Rect pmn_txt1_target_rect {210, 150, 250, 50};
+                pmenu.addTxt("Current score: " + std::to_string(score), g::font, 16, &pmn_ft_clr, &pmn_txt1_target_rect, &pmn_btt_clr, true, renderer);
+
+                GAME_STATE pmenu_state {NOINPUT};
+
+                while(pause) {
+                    pmenu.display(renderer, &srcRect, &destRect);
+                    SDL_RenderPresent(renderer);
+                    pmenu_state = pmenu.get_uinput();
+
+                    //std::cout << "Menu state: " << menu_state << '\n';
+
+                    if (pmenu_state == UPDATE)
+                    {
+                        id = pmenu.update();
+                        //std::cout << "menu_done : " << menu_done << '\n';
+                        //check all button presses: call functions
+                        switch(id) {
+                            case 0:
+                                pause = false;
+                                break;
+                            case 1:
+                                pause = false;
+                                done = true;
+                                break;
+                        }
+                    }
+                    
+                    if (pmenu_state == TERMINATE)
+                    {
+                        done = true;
+                    }
+                
+                    SDL_PollEvent(&event);
+
+                    if (event.type == SDL_QUIT){
+                        pause = false;
+                        done = true;
+                    }
+                }
+                pmenu.destroyTextures();
+            }
 
         }
     
-    
-        checkBestScore(x_run);
+        scoreCounter.destroyTxtTexture();
+
+        //Initializing end menu
+        Menu end_menu {end_menuRect, background_texture, end_mn_clr, renderer};
+
+        //Adding dynamic objects
+        end_menu.addBtt(NULL, "Restart", g::font, 16, &end_mn_ft_clr, &end_mn_btt1_target_rect, &end_mn_btt1_rect, &end_mn_btt_clr, true, 0, renderer);
+        end_menu.addBtt(NULL, "Quit", g::font, 16, &end_mn_ft_clr, &end_mn_btt2_target_rect, &end_mn_btt2_rect, &end_mn_btt_clr, true, 1, renderer);
+
+        //Initializing end menu dynamic objects
+        /*
+        std::cout << "About to load best_score from savefile";
+        try {
+            std::fstream Savefile(g::saveFile);
+            Savefile >> best_score; 
+            Savefile.close();
+        } catch(int e) {
+            std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
+        }
+        */
+
+        best_score = checkBestScore(score);
+
+        SDL_Rect end_mn_txt1_target_rect {end_menuRect.x + 100, end_menuRect.y + 50, 300, 50};
+        SDL_Rect end_mn_txt2_target_rect {end_menuRect.x + 100, end_menuRect.y + 150, 300, 50};
+        end_menu.addTxt("Your score: " + std::to_string(score), g::font, 16, &end_mn_ft_clr, &end_mn_txt1_target_rect, &end_mn_btt_clr, true, renderer);
+        end_menu.addTxt("Your best score: " + std::to_string(best_score), g::font, 16, &end_mn_ft_clr, &end_mn_txt2_target_rect, &end_mn_btt_clr, true, renderer);
+
+        //Initializing loop variables
+        GAME_STATE end_menu_state { NOINPUT };
 
         //menu_done = false;
         bool menu2_done = false;
         while(!done && !menu2_done) {
-            SDL_Rect srcRect {x_run/10, 500, g::W_W + x_run/10, g::W_H};
-            SDL_Rect tarRect {0, 0, g::W_W, g::W_H};
-            SDL_RenderCopy(renderer, background_texture, &srcRect, &tarRect);
-            SDL_Rect menu_window {100, 75, g::W_W - 200, g::W_H - 150};
-            SDL_SetRenderDrawColor(renderer, 200, 200, 200, 150);
-            SDL_RenderFillRect(renderer, &menu_window);
+            end_menu.display(renderer, &srcRect, &destRect);
             SDL_RenderPresent(renderer);
+            end_menu_state = end_menu.get_uinput();
 
-            SDL_PollEvent(&event);
+            //std::cout << "Menu state: " << menu_state << '\n';
+
+            if (end_menu_state == UPDATE)
+            {
+                id = end_menu.update();
+                //std::cout << "menu_done : " << menu_done << '\n';
+                //check all button presses: call functions
+                switch(id) {
+                    case 0:
+                        game_done = false;
+                        menu2_done = true;
+                        break;
+                    case 1:
+                        done = true;
+                        break;
+                }
+            }
+            
+            if (end_menu_state == TERMINATE)
+            {
+                done = true;
+            }
+        
             if (event.type == SDL_QUIT){
                 done = true;
             }
         }
+        end_menu.destroyTextures();
     
     }
 
     st_menu.destroyTextures();
-    //st_menu.~Menu();
     Quit();
 
     return 0;
