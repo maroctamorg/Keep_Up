@@ -1,6 +1,7 @@
 #include "text.h"
 #include "button.h"
 #include "menu.h"
+#include "Engine.h"
 #include "global.h"
 
 //Starts up SDL and creates window
@@ -341,8 +342,10 @@ int main(int arc, char* argv[]) {
                 switch(id) {
                     case 0:
                         menu_done = true;
+                        break;
                     case 1:
                         done = true;
+                        break;
                 }
             }
             
@@ -356,16 +359,16 @@ int main(int arc, char* argv[]) {
             }
         }
     
-    /*
+    
         //Initializing game objects
         SDL_Point point {static_cast<int> (g::W_W/3), g::W_H/2};
         Character character { point };
-        Obstacle_Generator generator { 5, 1, 50, 250 };
+        //Obstacle_Generator generator { 5, 1, 50, 250 };
         Obstacle_Generator generator { 1, 100, 250, -1};
 
         int x_run {0};
         int score {0};
-        Text scoreCounter {score + "", "Krungthep.ttf", 12, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
+        Text scoreCounter {std::to_string(score), "Krungthep.ttf", 12, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
         bool game_done {false};
         while(!done && !game_done){
             generator.generateObstacles();
@@ -373,7 +376,7 @@ int main(int arc, char* argv[]) {
             // displays running background
             if(x_run % 100) {
                 score++;
-                scoreCounter.assignTxt(score+"", renderer);
+                scoreCounter.assignTxt(std::to_string(score), renderer);
             }
             if(g::W_W + x_run/10 > size.x) {
                 x_run = 0;
@@ -420,13 +423,13 @@ int main(int arc, char* argv[]) {
             //std::cout << "Game Loop Length:\t" << gLoop.elapsed() << '\n';
 
         }
-    */
-    /*
+    
+    
         checkBestScore(x_run);
 
         //menu_done = false;
-        bool menu_done = false;
-        while(!done && menu_done) {
+        bool menu2_done = false;
+        while(!done && !menu2_done) {
             SDL_Rect srcRect {x_run/10, 500, g::W_W + x_run/10, g::W_H};
             SDL_Rect tarRect {0, 0, g::W_W, g::W_H};
             SDL_RenderCopy(renderer, background_texture, &srcRect, &tarRect);
@@ -440,7 +443,7 @@ int main(int arc, char* argv[]) {
                 done = true;
             }
         }
-    */
+    
     }
 
     st_menu.destroyTextures();

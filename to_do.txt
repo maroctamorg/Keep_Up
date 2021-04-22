@@ -6,13 +6,16 @@
   // + collision with obstacles
   // + boundaries: zero velocity when you reach the top; death when you reach bottom
  + implement score counter
+   + why isn't the score counter showing up in the game
  + implement menu (transparent white layer on top of background) for starting game and restarting game once dead (displays previous and highest score: write to file)
-   + implement button_functionality as part of game_loop: query menu object for selected buttons from vector, based on
-     button id implement functionality (as if they were keys being pressed on the keyboard)
-   - try to reimplement button and text with copy assignments rather than pointers: figure out how to delete duplicate objects afterwards
-   - check if some protected pointer is begin returned : perhaps change that?
-   - what is happening when I pass Button(...) or Text(...) objects to the std::vector? What is begin stored?
-     could try to default construct and then assign
+  // + implement button_functionality as part of game_loop: query menu object for selected buttons from vector, based on
+  //   button id implement functionality (as if they were keys being pressed on the keyboard)
+  // - try to reimplement button and text with copy assignments rather than pointers: figure out how to delete duplicate objects afterwards
+  // - check if some protected pointer is begin returned : perhaps change that?
+  // - what is happening when I pass Button(...) or Text(...) objects to the std::vector? What is begin stored?
+  //   could try to default construct and then assign
+   + redefine second menu as a second menu object implementation
+ + fix the 2 menus: button dimensions, colour and text
  + add music and sound effects (collisions, buttons in menu)
  + polish background animation
  + polish physics of motion
