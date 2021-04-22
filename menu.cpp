@@ -143,14 +143,18 @@ void Menu::display(SDL_Renderer *renderer, SDL_Rect *src_rect, SDL_Rect *dest_re
     SDL_SetRenderDrawColor(renderer, mn_clr.r, mn_clr.g, mn_clr.b, mn_clr.a);
     SDL_RenderFillRect(renderer, &menurect);
     
-    for (int i {0}; i < txt.size(); i++)
+    for (int i = 0; i < txt.size(); i++)
     {
-        txt[i].displayText(renderer);
+        if(txt.at(i).isInitialized()) {
+            txt[i].displayText(renderer);
+        }
     }
 
-    for (int i {0}; i < btt.size(); i++)
+    for (int i = 0; i < btt.size(); i++)
     {
-        btt[i].display(renderer);
+        if(btt.at(i).initialized) {
+            btt[i].display(renderer);
+        }
     }
 
 

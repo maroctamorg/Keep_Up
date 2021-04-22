@@ -294,13 +294,13 @@ int main(int arc, char* argv[]) {
     Menu st_menu {st_menuRect, background_texture, st_mn_clr, renderer};
 
     //Initializing start menu button objects
-    SDL_Rect st_mn_btt1_target_rect {200, g::W_H - 75, 150, 80};
-    SDL_Rect st_mn_btt1_rect {200, g::W_H - 75, 150, 80};
+    SDL_Rect st_mn_btt1_target_rect {200, st_menuRect.y + st_menuRect.h - 100, 150, 80};
+    SDL_Rect st_mn_btt1_rect {200, st_menuRect.y + st_menuRect.h - 100, 150, 80};
     st_menu.addBtt(NULL, "Start", g::font, 16, &st_mn_ft_clr, &st_mn_btt1_target_rect, &st_mn_btt1_rect, &st_mn_btt_clr, true, 0, renderer);
 
-    SDL_Rect st_mn_btt2_target_rect {400, g::W_H - 75, 150, 80};
-    SDL_Rect st_mn_btt2_rect {400, g::W_H - 75, 150, 80};
-    st_menu.addBtt(NULL, "Quit", g::font, 16, &st_mn_ft_clr, &st_mn_btt1_target_rect, &st_mn_btt1_rect, &st_mn_btt_clr, true, 1, renderer);
+    SDL_Rect st_mn_btt2_target_rect {400, st_menuRect.y + st_menuRect.h - 100, 150, 80};
+    SDL_Rect st_mn_btt2_rect {400, st_menuRect.y + st_menuRect.h - 100, 150, 80};
+    st_menu.addBtt(NULL, "Quit", g::font, 16, &st_mn_ft_clr, &st_mn_btt2_target_rect, &st_mn_btt2_rect, &st_mn_btt_clr, true, 1, renderer);
 
     //Initializing start menu text objects
     int best_score;
