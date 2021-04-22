@@ -1,11 +1,11 @@
 #include "global.h"
 #include "Engine.h"
 
-Character::Character(char* file, SDL_Point *point)
-    : fCostume {file}, pos {*point}, vel {5, 0}, colBox {point->x, point->y, 25, 25} {}
+Character::Character(SDL_Texture *texture0, SDL_Texture *texture1, SDL_Point *point)
+    : texture0 {texture0}, texture1 {texture1}, animationState {0}, pos {*point}, vel {5, 0}, colBox {point->x, point->y, 25, 25} {}
 
-Character::Character(const SDL_Point point)
-    : pos {point}, vel {0, 0}, colBox{point.x, point.y, 50, 50} {}
+//Character::Character(const SDL_Point point)
+//    : pos {point}, vel {0, 0}, colBox{point.x, point.y, 50, 50} {}
 
 Character::~Character(){}
 
@@ -33,6 +33,9 @@ void Character::update_speed() {
 
 void Character::move(){
     counter++;
+    if(counter % 3 == 0) {
+        animationState = (animationState + 1) % 2;
+    }
     
     //std::cout << "current speed: " << vel.y << '\n';
 
@@ -49,8 +52,8 @@ void Character::move(){
             vel.y += 1;
         }
     }
-    //colBox.x = pos.x - 10;
-    //colBox.y = pos.y - 10;
+    colBox.x = pos.x - 10;
+    colBox.y = pos.y - 10;
 }
 
 SDL_Rect* Character::getRect() {
@@ -63,12 +66,28 @@ bool Character::checkBounds() {
 
 void Character::draw(SDL_Renderer *renderer) {
     //std::cout << "drawing CHARACTER" << '\n';
-    
-    colBox.x = pos.x - 10;
-    colBox.y = pos.y - 10;
+    //SDL_Rect src_rect {1000, 400, 200, 200};
+    SDL_Rect dest_rect {pos.x - 100, pos.y - 50, 250, 150};
+    switch(animationState) {
+        case 0:
+            SDL_RenderCopy(renderer, texture0, NULL, &dest_rect);
+            break;
+        case 1:
+            SDL_RenderCopy(renderer, texture1, NULL, &dest_rect);
+            break;
+    }
+}
 
-    SDL_SetRenderDrawColor(renderer, 0, 250, 0, 250);
-    SDL_RenderFillRect(renderer, &colBox);
+void Character::destroyTexture() {
+    if(texture0 != nullptr && texture0 == NULL) {
+        SDL_DestroyTexture(texture0);
+        texture0 = nullptr;
+    }
+
+    if(texture1 != nullptr && texture1 == NULL) {
+        SDL_DestroyTexture(texture1);
+        texture1 = nullptr;
+    }
 }
 
 Obstacle::Obstacle(int vel, SDL_Rect shape)

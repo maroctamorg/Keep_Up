@@ -22,8 +22,11 @@ SDL_Window* window = NULL;
 //The window renderer
 SDL_Renderer* renderer = NULL;
 
-//Current displayed texture
+//Background texture
 SDL_Texture* background_texture = NULL;
+//Character textures
+SDL_Texture* character_texture0 = NULL;
+SDL_Texture* character_texture1 = NULL;
 
 bool Init()
 {
@@ -87,13 +90,27 @@ bool loadMedia()
 	//Loading success flag
 	bool success = true;
 
-	//Load PNG texture
+	//Load PNG textures
 	background_texture = loadTexture("resources/background.png");
 	if( background_texture == NULL )
 	{
 		printf( "Failed to load texture image!\n" );
 		success = false;
 	}
+
+    character_texture0 = loadTexture("resources/Opera_senza_titolo 5.png");
+    if( character_texture0 == NULL )
+	{
+		printf( "Failed to load texture image!\n" );
+		success = false;
+	}
+
+    character_texture1 = loadTexture("resources/Opera_senza_titolo 4.png");
+    if( character_texture1 == NULL )
+	{
+		printf( "Failed to load texture image!\n" );
+		success = false;
+	}    
 
 	return success;
 }
@@ -197,7 +214,7 @@ int main(int arc, char* argv[]) {
 
     if( !loadMedia() )
 	{
-		std::cout << "Unable to load background texture.\n";
+		std::cout << "Unable to load media.\n";
         return 1;
 	}
 
@@ -313,7 +330,7 @@ int main(int arc, char* argv[]) {
     
         //Initializing game objects
         SDL_Point point {static_cast<int> (g::W_W/3), g::W_H/2};
-        Character character { point };
+        Character character { character_texture0, character_texture1, &point };
         //Obstacle_Generator generator { 5, 1, 50, 250 };
         Obstacle_Generator generator { 2, 100, 250, -1}; //1, 100, 250, -1
 

@@ -10,15 +10,17 @@
 
 class Character {
     private:
-        std::string fCostume;
+        SDL_Texture *texture0;
+        SDL_Texture *texture1;
+        int animationState {0};
         SDL_Point pos;
         SDL_Point vel;
         SDL_Rect colBox;
         int counter {0};
 
     public:
-        Character(char* file, SDL_Point *point);
-        Character(SDL_Point point); //test version - replace costume by a square
+        Character(SDL_Texture *texture0, SDL_Texture *texture1, SDL_Point *point);
+        //Character(SDL_Point point); //test version - replace costume by a square
         ~Character();
 
         SDL_Point getPos();
@@ -34,6 +36,8 @@ class Character {
         bool checkBounds();
 
         void draw(SDL_Renderer *renderer);
+
+        void destroyTexture();
 
 };
 
