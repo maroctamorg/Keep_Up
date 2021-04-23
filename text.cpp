@@ -14,12 +14,12 @@ Text::Text(const std::string text, const std::string font, int ptsize, const SDL
     initialized = true;
 
     int control = this->generateTxtTexture(renderer);
-    std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
+    //std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
 }
 
 void Text::assign(const std::string text, const std::string font, int ptsize, const SDL_Colour *color, const SDL_Rect *target_rect, const SDL_Colour *rect_colour, bool display_rect, SDL_Renderer *renderer)
 {
-    std::cout << "Call to text.assign().\n";
+    //std::cout << "Call to text.assign().\n";
     this->text = text;
     this->font = font;
     this->ptsize = ptsize;
@@ -31,14 +31,14 @@ void Text::assign(const std::string text, const std::string font, int ptsize, co
     initialized = true;
 
     int control = this->generateTxtTexture(renderer);
-    std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
+    //std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
 
 }
 
 void Text::assignTxt(const std::string text, SDL_Renderer *renderer){
     this->text = text;
     int control = this->generateTxtTexture(renderer);
-    std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
+    //std::cout << "Returned from generateTxtTexture with flag " << control << '\n';
 }
 
 bool Text::isInitialized() {
@@ -53,10 +53,10 @@ int Text::generateTxtTexture(SDL_Renderer *renderer)
         txtTexture = nullptr;
     }
 
-    std::cout << "Call to generateTxtTexture.\n";
+    //std::cout << "Call to generateTxtTexture.\n";
     TTF_Font *txt_font { TTF_OpenFont(font.c_str(), ptsize) };
     if (!txt_font) {
-        std::cout << "Unable to load font.\n";
+        //std::cout << "Unable to load font.\n";
         txtTexture = nullptr;
     } else {
         SDL_Surface *surface { TTF_RenderText_Blended(txt_font, text.c_str(), color) };
@@ -85,7 +85,8 @@ void Text::displayText(SDL_Renderer *renderer)
             }
 
             SDL_RenderCopy(renderer, txtTexture, NULL, &dstrect);
-        } else { std::cout << "Text texture noninitialised: " << text << '\n'; }
+        } else { //std::cout << "Text texture noninitialised: " << text << '\n';
+        }
 }
 
 void Text::destroyTxtTexture()

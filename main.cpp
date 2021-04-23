@@ -201,17 +201,19 @@ public:
 };
 
 int checkBestScore(int score) {
-    std::fstream savefile(g::saveFile);
+    std::ifstream savefile(g::saveFile);
     int previous_score;
     int best_score;
     savefile >> previous_score;
+    savefile.close();
     if(score > previous_score) {
-        savefile.seekg(0);
+        std::ofstream savefile(g::saveFile);
         savefile << score;
         best_score = score;
+        savefile.close();
+    } else {
+        best_score = previous_score;
     }
-    best_score = previous_score;
-    savefile.close();
     return best_score;
 }
 
@@ -398,7 +400,7 @@ int main(int arc, char* argv[]) {
             generator.generateObstacles();
             
             // displays running background
-            if(x_run % 1000) {
+            if(x_run % 100 == 0) {
                 score++;
                 scoreCounter.assignTxt(std::to_string(score), renderer);
             }
