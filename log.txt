@@ -1,0 +1,2627 @@
+Succesfully initialised SDL window and renderer.
+Succesfully loaded background texture.
+menu::menu(...) : generateTextures returned flag: 0
+Call to button.assign().
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+No imgPath provided for button Texture, call to generateBttTexture skipped.
+Call to button.assign().
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+No imgPath provided for button Texture, call to generateBttTexture skipped.
+About to load best_score from savefileCall to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+SDL_MOUSEBUTTONDOWN event registered.
+Evaluating btt at 0
+Call to Button.Clicked.
+Call to press function.
+bpressed: 0x7fea0710fa80
+Evaluating btt at 1
+Call to Button.Clicked.
+Call to update function.
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Generating object
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Generating object
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Moving object...
+Moving object...
+menu::menu(...) : generateTextures returned flag: 0
+Call to button.assign().
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+No imgPath provided for button Texture, call to generateBttTexture skipped.
+Call to button.assign().
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+No imgPath provided for button Texture, call to generateBttTexture skipped.
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+Call to text.assign().
+Call to generateTxtTexture.
+Returned from generateTxtTexture with flag 1
+SDL_MOUSEBUTTONDOWN event registered.
+Evaluating btt at 0
+Call to Button.Clicked.
+Evaluating btt at 1
+Call to Button.Clicked.
+Call to press function.
+bpressed: 0x7fe9d4e08218
+Call to update function.
