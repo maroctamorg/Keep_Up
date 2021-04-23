@@ -2,7 +2,7 @@
 
 namespace g{
     extern const int W_W { 800 };
-    extern const int W_H { 500 };
+    extern const int W_H { 600 };
 
     extern const char* saveFile {"resources/savefile.txt"};
     extern const std::string font {"resources/Krungthep.ttf"};

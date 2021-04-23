@@ -9,6 +9,14 @@ Character::Character(SDL_Texture *texture0, SDL_Texture *texture1, SDL_Point *po
 
 Character::~Character(){}
 
+void Character::reset(SDL_Point *point) {
+    vel.x = 5;
+    vel.y = 0;
+
+    pos.x = point->x;
+    pos.y = point->y;
+}
+
 SDL_Point Character::getPos() {
     return pos;
 }
@@ -93,6 +101,31 @@ void Character::destroyTexture() {
 Obstacle::Obstacle(int vel, SDL_Rect shape)
     : shape{shape}, vel{ vel }, initialized{ true } {}
 
+void Obstacle::assign(int vel, int pos_y, int height) {
+    if(!initialized) {
+        this->vel = vel;
+        this->shape.x = g::W_W + 100;
+        this->shape.y = pos_y;
+        this->shape.w = 75;
+        this->shape.h = height;
+        initialized = true;
+
+    }
+
+}
+
+void Obstacle::assign(int vel, int distance, int pos_y, int height) {
+    if(!initialized) {
+        this->vel = vel;
+        this->shape.x = g::W_W + distance;
+        this->shape.y = pos_y;
+        this->shape.w = 75;
+        this->shape.h = height;
+        initialized = true;
+
+    }
+}
+
 //Obstacle::Obstacle() : initialized {false} {}
 
 Obstacle::~Obstacle() {
@@ -144,54 +177,76 @@ void Obstacle::draw(SDL_Renderer *renderer) {
 
 
 Obstacle_Generator::Obstacle_Generator(int rate, int beginRange, int endRange, int initialVel)
-    : rate{ rate }, range{ beginRange, endRange }, obstacles(5), vel {initialVel}, count{0} {
+    : rate{ rate }, range{ beginRange, endRange }, obstacles(3), vel {initialVel}, count{0} { //5
         srand(time(NULL));
+
+    
+        for(int i = 0; i < obstacles.size(); i++) {
+            if(!obstacles.at(i).isInitialized()) {
+                //std::cout << "Generating object" << '\n';
+                int height = rand()%range[1] + range[0];
+                int pos = ((rand()+1)%2)*(g::W_H-height);
+                obstacles.at(i).assign(vel, i*300, pos, height);
+            }
+        }
+    
+    
+
     }
 
 Obstacle_Generator::~Obstacle_Generator() {}
 
+void Obstacle_Generator::reset() {
+    for(int i = 0; i < obstacles.size(); i++) {
+        if(obstacles.at(i).isInitialized()) {
+            obstacles.at(i).deInitialize();
+        }
+    }
+}
+
 void Obstacle_Generator::generateObstacles() {
-    count++;
     
+    count++;
+
     //std::cout << "Call to object generator." << '\n';
     //std::cout << "rate: " << rate << ", count: " << count <<  ": " << rate*count % 50 << '\n';
 
-    // need to fix this part of the code
-    if(rate*count % 1000 == 0) {
+    if(rate*count % 1000 == 0) { //1000
         
         //std::cout << "Checking object generation... " << '\n';
 
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < obstacles.size(); i++) {
             if(!obstacles.at(i).isInitialized()) {
-                std::cout << "Generating object" << '\n';
+                //std::cout << "Generating object" << '\n';
                 int height = rand()%range[1] + range[0];
                 int pos = ((rand()+1)%2)*(g::W_H-height);
-                SDL_Rect shape {g::W_W, pos, 75, height};
-                obstacles.at(i) = Obstacle(vel, shape);
+                obstacles.at(i).assign(vel, pos, height);
                 return;
             }
         }   
     }
     
-    
 }
 
 void Obstacle_Generator::updateObstacles(){
-    for(int i = 0; i < 5; i++) {
+    
+    for(int i = 0; i < obstacles.size(); i++) {
         if(obstacles.at(i).isInitialized()) {
-            std::cout << "Moving object..." << '\n';
+            //std::cout << "Moving object..." << '\n';
             obstacles.at(i).move();
-            obstacles.at(i).update_speed(-count/50000); //50000
             if (obstacles.at(i).getPos().x + obstacles.at(i).getWidth() < 0 ) {
                 std::cout << "Deinitializing object..." << '\n';
                 obstacles.at(i).deInitialize();
+            }
+            if(count % 50000 == 0) {
+                obstacles.at(i).update_speed(-count/50000); //50000
             }
         }
     }
 }
 
 bool Obstacle_Generator::checkCollisions(SDL_Rect *character) {
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < obstacles.size(); i++) {
         if(obstacles.at(i).isInitialized()) {
             if(obstacles.at(i).checkCollision(character)){
                 return true;
@@ -203,8 +258,8 @@ bool Obstacle_Generator::checkCollisions(SDL_Rect *character) {
 }
 
 void Obstacle_Generator::draw(SDL_Renderer *renderer) {
-    for(int i = 0; i < 5; i++) {
-        if(obstacles.at(i).isInitialized()) {
+    for(int i = 0; i < obstacles.size(); i++) {
+        if(obstacles.at(i).isInitialized() && obstacles.at(i).getPos().x < g::W_W) {
             //std::cout << "drawing obstacle" << '\n';
             obstacles.at(i).draw(renderer);
         }

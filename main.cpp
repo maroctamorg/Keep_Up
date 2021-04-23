@@ -28,11 +28,17 @@ SDL_Texture* background_texture = NULL;
 SDL_Texture* character_texture0 = NULL;
 SDL_Texture* character_texture1 = NULL;
 
+//Music
+Mix_Music *music = NULL;
+
 bool Init()
 {
 	//Initialization flag
 	bool success = true;
+    
+    //Initialize TTF and MIXER
     TTF_Init();
+    Mix_Init(MIX_INIT_OGG);
 
 	//Initialize SDL
 	if( SDL_Init( SDL_INIT_EVERYTHING ) < 0 )
@@ -82,6 +88,11 @@ bool Init()
 		}
 	}
 
+    //Initializing AUDIO subsystem
+    SDL_InitSubSystem(SDL_INIT_AUDIO);
+    Mix_AllocateChannels(1);
+    Mix_OpenAudio(48000, AUDIO_S16, 2, 4096);
+
 	return success;
 }
 
@@ -130,6 +141,8 @@ void Quit()
 	renderer = NULL;
 
 	//Quit SDL subsystems
+	Mix_CloseAudio();
+    Mix_Quit();
 	TTF_Quit();
     IMG_Quit();
 	SDL_Quit();
@@ -245,14 +258,14 @@ int main(int arc, char* argv[]) {
 
     //Initializing start menu text objects
     int best_score = checkBestScore(0);
-    std::cout << "About to load best_score from savefile";
+    /*std::cout << "About to load best_score from savefile";
     try {
         std::fstream Savefile(g::saveFile);
         Savefile >> best_score; 
         Savefile.close();
     } catch(int e) {
         std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
-    }
+    }*/
     SDL_Rect st_mn_txt1_target_rect {200, 150, 400, 60};
     st_menu.addTxt("Your best score: " + std::to_string(best_score), g::font, 22, &st_mn_ft_clr, &st_mn_txt1_target_rect, &st_mn_btt_clr, true, renderer);
 
@@ -262,12 +275,22 @@ int main(int arc, char* argv[]) {
     SDL_Colour pmn_ft_clr {250, 250, 250, 150};
     SDL_Colour pmn_btt_clr {0, 0, 0, 150};
 
-    //Initializing pause menu button objects
+    //Initializing pause menu button attributes
     SDL_Rect pmn_btt1_rect {200, pmenuRect.y + pmenuRect.h - 100, 150, 50};
     SDL_Rect pmn_btt1_target_rect {225, pmn_btt1_rect.y + 10, 150, 30};
-
     SDL_Rect pmn_btt2_rect {400, pmenuRect.y + pmenuRect.h - 100, 150, 50};
     SDL_Rect pmn_btt2_target_rect {425, pmn_btt2_rect.y + 10, 150, 30};
+    //Initializing pause menu text attributes
+    SDL_Rect pmn_txt1_target_rect {210, 150, 250, 50};
+
+    //Initializing pause menu
+    Menu pmenu {pmenuRect, background_texture, pmn_clr, renderer};
+
+    //Adding static objects
+    pmenu.addBtt(NULL, "Resume", g::font, 16, &pmn_ft_clr, &pmn_btt1_target_rect, &pmn_btt1_rect, &pmn_btt_clr, true, 0, renderer);
+    pmenu.addBtt(NULL, "Quit", g::font, 16, &pmn_ft_clr, &pmn_btt2_target_rect, &pmn_btt2_rect, &pmn_btt_clr, true, 1, renderer);
+    //Adding dynamic objects
+    pmenu.addTxt("Current score: 0", g::font, 16, &pmn_ft_clr, &pmn_txt1_target_rect, &pmn_btt_clr, true, renderer);
 
 
     //Initializing end menu static objects
@@ -283,10 +306,39 @@ int main(int arc, char* argv[]) {
     SDL_Rect end_mn_btt2_rect {400, end_menuRect.y + end_menuRect.h - 100, 150, 50};
     SDL_Rect end_mn_btt2_target_rect {425, end_mn_btt2_rect.y + 10, 150, 30};
 
+    //Initializing end menu
+    Menu end_menu {end_menuRect, background_texture, end_mn_clr, renderer};
+
+    //Adding static objects
+    end_menu.addBtt(NULL, "Restart", g::font, 16, &end_mn_ft_clr, &end_mn_btt1_target_rect, &end_mn_btt1_rect, &end_mn_btt_clr, true, 0, renderer);
+    end_menu.addBtt(NULL, "Quit", g::font, 16, &end_mn_ft_clr, &end_mn_btt2_target_rect, &end_mn_btt2_rect, &end_mn_btt_clr, true, 1, renderer);
+    //Adding dynamic objects
+    SDL_Rect end_mn_txt1_target_rect {end_menuRect.x + 100, end_menuRect.y + 50, 300, 50};
+    SDL_Rect end_mn_txt2_target_rect {end_menuRect.x + 100, end_menuRect.y + 150, 300, 50};
+    end_menu.addTxt("Your score: 0", g::font, 16, &end_mn_ft_clr, &end_mn_txt1_target_rect, &end_mn_btt_clr, true, renderer);
+    end_menu.addTxt("Your best score: 0", g::font, 16, &end_mn_ft_clr, &end_mn_txt2_target_rect, &end_mn_btt_clr, true, renderer);
+
+
+    //Initializing game_loop objects and variables
+    SDL_Point point {static_cast<int> (g::W_W/3), g::W_H/2};
+    int x_run {0};
+    int score {0};
+    Text scoreCounter {std::to_string(score), g::font, 16, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
+    bool game_done {false};
+    bool pause {false};
+
+    SDL_Rect srcRect {0, 500, g::W_W, g::W_H}; //background texture source
+    SDL_Rect tarRect {0, 0, g::W_W, g::W_H}; //and target rectangles
+
+    //Initializing game objects
+    Character character { character_texture0, character_texture1, &point };
+    //Obstacle_Generator generator { 5, 1, 50, 250 };
+    Obstacle_Generator generator { 2, 100, 250, -1}; //1, 100, 250, -1
+    // load music and sounds from files
+    music = Mix_LoadMUS("resources/Progetto_Gioco.wav");
+
     //Initializing outer loop variables
     GAME_STATE menu_state { NOINPUT };
-    SDL_Rect srcRect {0, 0, g::W_W, g::W_H};
-    SDL_Rect destRect {0, 0, g::W_W, g::W_H};
     bool done { false };
 
     //Initializing menu loop variables
@@ -294,7 +346,7 @@ int main(int arc, char* argv[]) {
     int id {-1};
     //Start menu
     while(!menu_done && !done) {
-        st_menu.display(renderer, &srcRect, &destRect);
+        st_menu.display(renderer, &srcRect, &tarRect);
         SDL_RenderPresent(renderer);
         menu_state = st_menu.get_uinput();
 
@@ -325,21 +377,24 @@ int main(int arc, char* argv[]) {
         }
     }
 
+    //play music
+    if (music)
+        Mix_PlayMusic(music, -1);
+
     while(!done) {
     
-    
+    /*
         //Initializing game objects
-        SDL_Point point {static_cast<int> (g::W_W/3), g::W_H/2};
         Character character { character_texture0, character_texture1, &point };
         //Obstacle_Generator generator { 5, 1, 50, 250 };
         Obstacle_Generator generator { 2, 100, 250, -1}; //1, 100, 250, -1
+    */
+        x_run = 0;
+        score = 0;
+        game_done = false;
+        pause = false;
 
-        int x_run {0};
-        int score {0};
-        Text scoreCounter {std::to_string(score), g::font, 16, &g::scoreCounterTxtColour, &g::scoreCounterRect, &g::scoreCounterRectColour, true, renderer};
-        bool game_done {false};
-        bool pause {false};
-        while(!done && !game_done) {
+        while(!game_done) {
             generator.generateObstacles();
             
             // displays running background
@@ -351,29 +406,29 @@ int main(int arc, char* argv[]) {
                 x_run = 0;
             }
 
-            SDL_Rect srcRect {x_run/10, 500, g::W_W + x_run/10, g::W_H};
-            SDL_Rect tarRect {0, 0, g::W_W, g::W_H};  
-            SDL_RenderCopy(renderer, background_texture, &srcRect, &tarRect);
-            //
-
-            character.draw(renderer);
-            generator.draw(renderer);
-            scoreCounter.displayText(renderer);
-
             character.move();
             if(!character.checkBounds()) {
+                game_done = true;
                 break;
             }
             generator.updateObstacles();
             if(generator.checkCollisions(character.getRect())) {
+                game_done = true;
                 break;
             }
 
+            srcRect.x = x_run/10;
+            srcRect.w = g::W_W + x_run/10;
+            SDL_RenderCopy(renderer, background_texture, &srcRect, &tarRect);
+            character.draw(renderer);
+            generator.draw(renderer);
+            scoreCounter.displayText(renderer);
             SDL_RenderPresent(renderer);
 
             SDL_PollEvent(&event);
             switch(event.type) {
                 case SDL_QUIT:
+                    game_done = true;
                     done = true;
                     break;
                 case SDL_KEYDOWN:
@@ -392,30 +447,33 @@ int main(int arc, char* argv[]) {
             x_run++;
 
             if(pause) {
+                //Pauses Music
+                Mix_PauseMusic();
+            /*
                 //Initializing pause menu
                 Menu pmenu {pmenuRect, background_texture, pmn_clr, renderer};
 
-                //Adding dynamic objects
+                //Adding static objects
                 pmenu.addBtt(NULL, "Resume", g::font, 16, &pmn_ft_clr, &pmn_btt1_target_rect, &pmn_btt1_rect, &pmn_btt_clr, true, 0, renderer);
                 pmenu.addBtt(NULL, "Quit", g::font, 16, &pmn_ft_clr, &pmn_btt2_target_rect, &pmn_btt2_rect, &pmn_btt_clr, true, 1, renderer);
-
+            */
                 //Initializing pause menu dynamic objects
                 best_score = checkBestScore(score);
-                std::cout << "About to load best_score from savefile";
+                /*std::cout << "About to load best_score from savefile";
                 try {
                     std::fstream Savefile(g::saveFile);
                     Savefile >> best_score; 
                     Savefile.close();
                 } catch(int e) {
                     std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
-                }
-                SDL_Rect pmn_txt1_target_rect {210, 150, 250, 50};
-                pmenu.addTxt("Current score: " + std::to_string(score), g::font, 16, &pmn_ft_clr, &pmn_txt1_target_rect, &pmn_btt_clr, true, renderer);
+                }*/
+                //pmenu.addTxt("Current score: " + std::to_string(score), g::font, 16, &pmn_ft_clr, &pmn_txt1_target_rect, &pmn_btt_clr, true, renderer);
+                pmenu.assignTxt(0, "Current score: " + std::to_string(score), renderer);
 
                 GAME_STATE pmenu_state {NOINPUT};
 
                 while(pause) {
-                    pmenu.display(renderer, &srcRect, &destRect);
+                    pmenu.display(renderer, &srcRect, &tarRect);
                     SDL_RenderPresent(renderer);
                     pmenu_state = pmenu.get_uinput();
 
@@ -429,9 +487,12 @@ int main(int arc, char* argv[]) {
                         switch(id) {
                             case 0:
                                 pause = false;
+                                if (music)
+                                    Mix_ResumeMusic();
                                 break;
                             case 1:
                                 pause = false;
+                                game_done = true;
                                 done = true;
                                 break;
                         }
@@ -439,6 +500,7 @@ int main(int arc, char* argv[]) {
                     
                     if (pmenu_state == TERMINATE)
                     {
+                        game_done = true;
                         done = true;
                     }
                 
@@ -446,41 +508,22 @@ int main(int arc, char* argv[]) {
 
                     if (event.type == SDL_QUIT){
                         pause = false;
+                        game_done = true;
                         done = true;
                     }
                 }
-                pmenu.destroyTextures();
+                
             }
 
         }
-    
-        scoreCounter.destroyTxtTexture();
 
-        //Initializing end menu
-        Menu end_menu {end_menuRect, background_texture, end_mn_clr, renderer};
+        //stops sound
+        Mix_HaltMusic();
 
-        //Adding dynamic objects
-        end_menu.addBtt(NULL, "Restart", g::font, 16, &end_mn_ft_clr, &end_mn_btt1_target_rect, &end_mn_btt1_rect, &end_mn_btt_clr, true, 0, renderer);
-        end_menu.addBtt(NULL, "Quit", g::font, 16, &end_mn_ft_clr, &end_mn_btt2_target_rect, &end_mn_btt2_rect, &end_mn_btt_clr, true, 1, renderer);
-
-        //Initializing end menu dynamic objects
-        /*
-        std::cout << "About to load best_score from savefile";
-        try {
-            std::fstream Savefile(g::saveFile);
-            Savefile >> best_score; 
-            Savefile.close();
-        } catch(int e) {
-            std::cout << "Unable to load best score from savefile. Exception N. " << e << '\n';
-        }
-        */
-
+        //Updating dynamic objects
         best_score = checkBestScore(score);
-
-        SDL_Rect end_mn_txt1_target_rect {end_menuRect.x + 100, end_menuRect.y + 50, 300, 50};
-        SDL_Rect end_mn_txt2_target_rect {end_menuRect.x + 100, end_menuRect.y + 150, 300, 50};
-        end_menu.addTxt("Your score: " + std::to_string(score), g::font, 16, &end_mn_ft_clr, &end_mn_txt1_target_rect, &end_mn_btt_clr, true, renderer);
-        end_menu.addTxt("Your best score: " + std::to_string(best_score), g::font, 16, &end_mn_ft_clr, &end_mn_txt2_target_rect, &end_mn_btt_clr, true, renderer);
+        end_menu.assignTxt(0, "Your score: " + std::to_string(score), renderer);
+        end_menu.assignTxt(1, "Your best score: " + std::to_string(best_score), renderer);
 
         //Initializing loop variables
         GAME_STATE end_menu_state { NOINPUT };
@@ -488,7 +531,7 @@ int main(int arc, char* argv[]) {
         //menu_done = false;
         bool menu2_done = false;
         while(!done && !menu2_done) {
-            end_menu.display(renderer, &srcRect, &destRect);
+            end_menu.display(renderer, &srcRect, &tarRect);
             SDL_RenderPresent(renderer);
             end_menu_state = end_menu.get_uinput();
 
@@ -503,6 +546,9 @@ int main(int arc, char* argv[]) {
                     case 0:
                         game_done = false;
                         menu2_done = true;
+                        character.reset(&point);
+                        generator.reset();
+                        Mix_PlayMusic(music, -1);
                         break;
                     case 1:
                         done = true;
@@ -519,11 +565,19 @@ int main(int arc, char* argv[]) {
                 done = true;
             }
         }
-        end_menu.destroyTextures();
     
     }
 
+    //Halt music and free loaded music data
+    Mix_HaltMusic();
+    Mix_FreeMusic(music);
+
+    //Destroy textures
+    scoreCounter.destroyTxtTexture();
     st_menu.destroyTextures();
+    pmenu.destroyTextures();
+    end_menu.destroyTextures();
+
     Quit();
 
     return 0;

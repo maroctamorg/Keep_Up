@@ -23,6 +23,8 @@ class Character {
         //Character(SDL_Point point); //test version - replace costume by a square
         ~Character();
 
+        void reset(SDL_Point *point);
+
         SDL_Point getPos();
 
         SDL_Point getVel();
@@ -43,14 +45,17 @@ class Character {
 
 class Obstacle {
     private:
-        SDL_Rect shape;
-        int vel;
+        SDL_Rect shape {g::W_W, g::W_H, 0, 0};
+        int vel {0};
         bool initialized {false};
 
     public:
         Obstacle(int vel, SDL_Rect shape);
         Obstacle() = default;
         ~Obstacle();
+
+        void assign(int vel, int pos_y, int height);
+        void assign(int vel, int distance, int pos_y, int height);
 
         SDL_Point getPos();
 
@@ -82,6 +87,8 @@ class Obstacle_Generator {
     public:
         Obstacle_Generator(int rate, int beginRange, int endRange, int initialVel);
         ~Obstacle_Generator();
+
+        void reset();
 
         void generateObstacles();
 

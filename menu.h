@@ -26,7 +26,7 @@ private:
     std::vector <Button> btt;
 
     Button *bpressed { nullptr };
-    Button* bselected { nullptr };
+    Button *bselected { nullptr };
     
     int tn {0};
     int an {0};
@@ -49,6 +49,7 @@ public:
 
     void addBtt(char* imgPath, std::string text, std::string font, int ptsize, const SDL_Color *font_color, const SDL_Rect *target_rect, const SDL_Rect *rect, const SDL_Color *color, bool is_active, int id, SDL_Renderer *renderer);
     void addTxt(const std::string text, const std::string font, int ptsize, const SDL_Colour *color, const SDL_Rect *target_rect, const SDL_Colour *rect_colour, bool display_rect, SDL_Renderer *renderer);
+    void assignTxt(int index, const std::string text, SDL_Renderer *renderer);
 
     void display(SDL_Renderer *renderer, SDL_Rect *src_rect, SDL_Rect *dest_rect);
     

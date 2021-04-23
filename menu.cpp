@@ -96,6 +96,11 @@ void Menu::addTxt(const std::string text, const std::string font, int ptsize, co
 
 }
 
+void Menu::assignTxt(int index, const std::string text, SDL_Renderer *renderer) {
+    txt.at(index).assignTxt(text, renderer);
+
+}
+
 //should implement this in the actual game loop: check for button selections and implement functionality
 /*
 bool menu::button_functionality(int id)
