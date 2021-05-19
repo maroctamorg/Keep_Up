@@ -4,6 +4,8 @@
 #include "Engine.h"
 #include "global.h"
 
+#edited on ipad from VSCode Live Server!
+
 //Starts up SDL and creates window
 bool Init();
 
