@@ -235,7 +235,7 @@ void Obstacle_Generator::updateObstacles(){
             //std::cout << "Moving object..." << '\n';
             obstacles.at(i).move();
             if (obstacles.at(i).getPos().x + obstacles.at(i).getWidth() < 0 ) {
-                std::cout << "Deinitializing object..." << '\n';
+                //std::cout << "Deinitializing object..." << '\n';
                 obstacles.at(i).deInitialize();
             }
             if(count % 50000 == 0) {

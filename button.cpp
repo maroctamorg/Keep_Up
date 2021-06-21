@@ -6,16 +6,16 @@ Button::Button(char* imgPath, std::string text, std::string font, int ptsize, co
 {
     if (!imgPath)
     {
-        std::cout << "Call to generateBttTexture with argument: " << imgPath << '\n'; 
+        //std::cout << "Call to generateBttTexture with argument: " << imgPath << '\n'; 
         int control = generateBttTexture(imgPath, renderer);
-        std::cout << "Returned from generateBttTexture with flag " << control << '\n';
+        //std::cout << "Returned from generateBttTexture with flag " << control << '\n';
     }
 }
 
 
 void Button::assign(char* imgPath, std::string text, std::string font, int ptsize, const SDL_Color *font_color, const SDL_Rect *target_rect, const SDL_Rect *rect, const SDL_Color *color, bool is_active, int id, SDL_Renderer *renderer)
 {
-    std::cout << "Call to button.assign().\n";
+    //std::cout << "Call to button.assign().\n";
 
     b_txt.assign(text, font, ptsize, font_color, target_rect, color, false, renderer);
     b_rect = *rect;
@@ -26,11 +26,11 @@ void Button::assign(char* imgPath, std::string text, std::string font, int ptsiz
 
     if (imgPath)
     {
-        std::cout << "Call to generateBttTexture with argument: " << imgPath << '\n'; 
+        //std::cout << "Call to generateBttTexture with argument: " << imgPath << '\n'; 
         int control = generateBttTexture(imgPath, renderer);
-        std::cout << "Returned from generateBttTexture with flag " << control << '\n';
+        //std::cout << "Returned from generateBttTexture with flag " << control << '\n';
     } else {
-        std::cout << "No imgPath provided for button Texture, call to generateBttTexture skipped.\n";
+        //std::cout << "No imgPath provided for button Texture, call to generateBttTexture skipped.\n";
     }
 }
 
@@ -45,7 +45,7 @@ bool Button::isPressed()    {   return b_state.pressed; }
 
 bool Button::Clicked(const SDL_Point &cursor_pos)
 {
-    std::cout << "Call to Button.Clicked.\n";
+    //std::cout << "Call to Button.Clicked.\n";
     bool control { false };
 
     //YET TO BE IMPLEMENTED - ??? isn't it already implemented ?!?

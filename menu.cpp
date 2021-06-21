@@ -65,7 +65,7 @@ Menu::Menu(SDL_Rect menuRect, SDL_Texture *bckgr_texture, SDL_Colour mn_clr, SDL
     : menurect(menuRect), bckgr_texture {bckgr_texture}, mn_clr {mn_clr}, btt(2), txt(2) {
 
         int control = generateTextures(renderer);
-        std::cout << "menu::menu(...) : generateTextures returned flag: " << control << '\n';
+        //std::cout << "menu::menu(...) : generateTextures returned flag: " << control << '\n';
 
     }
 
@@ -180,7 +180,7 @@ GAME_STATE Menu::get_uinput()
         {
             case SDL_MOUSEBUTTONDOWN:
 
-                std::cout << "SDL_MOUSEBUTTONDOWN event registered.\n";
+                //std::cout << "SDL_MOUSEBUTTONDOWN event registered.\n";
 
                 SDL_GetMouseState(&(cursor_pos.x), &(cursor_pos.y));
 
@@ -188,16 +188,16 @@ GAME_STATE Menu::get_uinput()
 
                     for (int i {0}; i < btt.size(); i++)
                     {
-                        std::cout << "Evaluating btt at " << i <<'\n';
+                        //std::cout << "Evaluating btt at " << i <<'\n';
                         if (btt[i].isActive() && btt[i].Clicked(cursor_pos))
                         {
                             state = UPDATE;
 
-                            std::cout << "Call to press function.\n";
+                            //std::cout << "Call to press function.\n";
 
                             bpressed = btt[i].press();
 
-                            std::cout << "bpressed: " << bpressed << '\n';
+                            //std::cout << "bpressed: " << bpressed << '\n';
                             //element.press must return a pointer to button element
                         }
                     }
@@ -225,7 +225,7 @@ int Menu::update()
 
     bool done { false };
 
-    std::cout << "Call to update function.\n";
+    //std::cout << "Call to update function.\n";
     if (bpressed)
     {
         return bpressed->b_id;

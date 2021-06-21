@@ -1,4 +1,4 @@
-CFLAGS = -std=c++11 -Wall
+CFLAGS = -std=c++11
 INCLUDE = -F/Library/Frameworks -framework SDL2 -framework SDL2_image -framework SDL2_ttf -framework SDL2_mixer
 FILES = main.cpp menu.cpp button.cpp text.cpp global.cpp Engine.cpp
 
